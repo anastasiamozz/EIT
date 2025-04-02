@@ -1,0 +1,17 @@
+.dynamic-div {
+  width: 100%;  /* Take full width */
+  height: 50vh; /* Take half of the viewport height */
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+  .dynamic-div {
+    height: 30vh;  /* Make it shorter */
+    background-color: lightcoral;  /* Change color */
+  }
+}
