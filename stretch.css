@@ -1,0 +1,9 @@
+@media(max-width: 768px) {
+   .container {
+      flex-direction: column;
+    }
+    img {
+         max-width: 100%;
+         height: auto;
+        }
+}
