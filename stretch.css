@@ -7,3 +7,71 @@
          height: auto;
         }
 }
+.fullscreen {
+   width: 100vw;
+   height: 100vh;
+   background: lightblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ /* For mobile screens, reduce height */
+ @media (max-width: 480px) {
+   .fullscreen {
+     height: 80vh;
+   }
+ }
+ img {
+   width: 100%;
+   height: auto;
+   max-width: 600px; /* Prevents it from getting too large */
+ }
+ 
+ /* On very small screens, make it smaller */
+ @media (max-width: 480px) {
+   img {
+     max-width: 300px;
+   }
+ }
+ /* Default styles (for large screens) */
+body {
+   font-size: 18px;
+ }
+ 
+ /*  Mobile screens (up to 480px wide) */
+ @media (max-width: 480px) {
+   body {
+     font-size: 14px;
+   }
+ 
+   img {
+     width: 100%;  /* Make images responsive */
+     height: auto;
+   }
+ }
+ 
+ /*  Tablets & small laptops (481px - 768px) */
+ @media (max-width: 768px) {
+   body {
+     font-size: 16px;
+   }
+ 
+   .container {
+     padding: 20px;
+   }
+ }
+ 
+ /*  Desktops (769px - 1024px) */
+ @media (max-width: 1024px) {
+   body {
+     font-size: 17px;
+   }
+ }
+ 
+ /*  Large screens (above 1024px) */
+ @media (min-width: 1025px) {
+   body {
+     font-size: 18px;
+   }
+ }
