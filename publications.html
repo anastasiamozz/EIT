@@ -66,11 +66,12 @@
 
 
 
-#_140_57 {
+/* Section headers (previously _140_57) */
+.section-header, [id^="_140_5"] {
     text-align: left;
     color: #eb4706;
     font-family: Inter, sans-serif;
-    font-size: 2vw !important; 
+    font-size: 2vw !important;
     font-weight: 600;
     line-height: 1.5;
     display: flex;
@@ -81,12 +82,24 @@
     margin: 30px;
 }
 
-@media (max-width: 768px) { 
-    #_140_57 {
-        font-size: 4vw !important; 
+@media (max-width: 768px) {
+    .section-header, [id^="_140_5"] {
+        font-size: 4vw !important;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header, [id^="_140_5"] {
+        font-size: 0.6rem !important;
+        text-align: center;
+        width: 90%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 5px;
+        line-height: 1.2;
     }
 }
 
@@ -127,168 +140,54 @@
     }
 }
   
-
-
-
-  #Paragraph{text-align:justify;color:#373333;--f2w-order:2;-webkit-background-clip:text;background-clip:text;
-  width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem !important;font-weight:300;line-height:150%;display:block;position:relative;
-  margin-top:30px;margin-left:7.9%;margin-right:5.9%}
-  #__1{color:#373333;-webkit-background-clip:text;background-clip:text;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:1.5}
-    .highlighted {
-  color: #1987c7;
-  font-weight: bold; 
+/* Style for all paragraph sections */
+[id^="Paragraph"] {
+    text-align: justify;
+    color: #373333;
+    width: 100%;
+    max-width: 86.2%;
+    height: auto;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem !important;
+    font-weight: 300;
+    line-height: 150%;
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 7.9%;
+    margin-right: 5.9%;
 }
 
-  @media (max-width: 1024px) {
-    #Paragraph {
-        font-size: 1.1rem; 
-        margin-top: 30px; 
+/* Responsive styles for all paragraphs */
+@media (max-width: 1024px) {
+    [id^="Paragraph"] {
+        font-size: 1.1rem !important;
+        margin-top: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    #Paragraph {
-        font-size: 1rem !important; 
-        margin-top: 20px; 
+    [id^="Paragraph"] {
+        font-size: 1rem !important;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    #Paragraph {
-        font-size: 0.4rem !important; 
-        margin-top: 10px; 
-        margin-left: auto; 
+    [id^="Paragraph"] {
+        font-size: 0.8rem !important;
+        margin-top: 10px;
+        margin-left: auto;
         margin-right: auto;
-        width: 90%; 
-        text-align: justify; 
+        width: 90%;
+        text-align: justify;
     }
-
-    #__1 {
-        font-size: 0.4rem !important; 
-        line-height: 1.2; 
-    }
-}
-
-
-  #Paragraph_0{text-align:justify;color:#373333;--f2w-order:5;-webkit-background-clip:text;background-clip:text;
-  width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%;display:block;position:relative;
-  margin: 5% auto;padding: 10px;}
-  #__27{color:#373333;-webkit-background-clip:text;background-clip:text;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%}
-  
-  @media (max-width: 1024px) {
-  #Paragraph_0 {
-    font-size: 1.1rem; 
-    margin: 3% auto;
-  }
-}
-
-@media (max-width: 768px) {
-  #Paragraph_0 {
-    font-size: 1rem; 
-    margin: 2% auto;
-    padding: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-    #Paragraph_0 {
-        font-size: 0.4rem!important; 
-        margin-top: 10px; 
-        margin-left: auto; 
-        margin-right: auto;
-        width: 90%; 
-        text-align: justify; 
-    }
-
-    #__27 {
-        font-size: 0.4rem; 
-        line-height: 1.2; 
+    
+    [id^="Paragraph"] .text {
+        font-size: 0.8rem !important;
+        line-height: 1.2;
     }
 }
- 
-
-  #Paragraph_1{text-align:justify;color:#373333;--f2w-order:3;-webkit-background-clip:text;background-clip:text;
- width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%;display:block;position:relative;
- margin: 5% auto;padding: 10px;}
-  #__21{color:#373333;-webkit-background-clip:text;background-clip:text;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%}
-  .highlighted {
-  color: #1987c7;
-  font-weight: bold; 
-}
-
-  @media (max-width: 1024px) {
-  #Paragraph_1 {
-    font-size: 1.1rem;
-    margin: 3% auto;
-  }
-}
-
-@media (max-width: 768px) {
-  #Paragraph_1 {
-    font-size: 1rem;
-    margin: 2% auto;
-    padding: 5px;
-  }
-}
-@media (max-width: 480px) {
-    #Paragraph_1 {
-        font-size: 0.4rem; 
-        margin-top: 10px; 
-        margin-left: auto; 
-        margin-right: auto;
-        width: 90%; 
-        text-align: justify; 
-    }
-
-    #__21 {
-        font-size: 0.4rem; 
-        line-height: 1.2; 
-    }
-}
- 
-   
-  
-
-
- #Paragraph_2{text-align:justify;color:#373333;--f2w-order:3;-webkit-background-clip:text;background-clip:text;
- width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%;display:block;position:relative;
- margin: 5% auto;padding: 10px;}
-#__22{color:#373333;-webkit-background-clip:text;background-clip:text;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%}
-.highlighted {
-  color: #1987c7;
-  font-weight: bold; 
-}
-
-  @media (max-width: 1024px) {
-  #Paragraph_2 {
-    font-size: 1.1rem;
-    margin: 3% auto;
-  }
-}
-
-@media (max-width: 768px) {
-  #Paragraph_2 {
-    font-size: 1rem;
-    margin: 2% auto;
-    padding: 5px;
-  }
-}
-@media (max-width: 480px) {
-    #Paragraph_2 {
-        font-size: 0.4rem; 
-        margin-top: 10px; 
-        margin-left: auto; 
-        margin-right: auto;
-        width: 90%; 
-        text-align: justify; 
-    }
-
-    #__22 {
-        font-size: 0.4rem; 
-        line-height: 1.2; 
-    }
-}
-
 
 
 
@@ -605,43 +504,62 @@
 
 
 
-</head><body id="_">
-  
-    <div id="Landing_page">
-        <div id="Image">
-          
-          <div id="Copy" class="pointer-events-none">
-          </div>
-
-          <span id="_140_57" class="pointer-events-none"><span id="__0" class="text">Peer-reviewed journal articles</span></span>
-
-          <span id="Paragraph" class="pointer-events-none"><span id="__1" class="text">Mozhaeva A, Cree MJ, Durrant RJ, Vlasuyk I, Potashnikov A, Mazin V, Streeter L (2024). A contrast sensitivity model of the human visual system in modern conditions for presenting video content. PLoS One, 19(5).<span class="highlighted"> https://doi.org/10.1371/journal.pone.0303987</span><br id="__2"><br id="__3">Mozhaeva A (2023, In Press). Video quality assessment adapted for TV signals considering modern media content transmission features. Radio Engineering.<br id="__4"><br id="__5">Mozhaeva A, Vashenko E, Selivanov V, Potashnikov A, Vlasuyk I, Streeter L (2022). Analysis of current video databases for quality assessment. T-Comm, 16(2), pp. 48-56.<br id="__6"><br id="__7">Mozhaeva A, Vlasyuk I, Nezhivleva K, Komina A (2022). Methodology for creating a stimulus for quantitative assessment of the flicker effect in video compression. Systems for synchronization, formation and processing of signals, 13(6), pp. 29-36.<br id="__8"><br id="__9">Vyatkin M, Potashnikov A, Selivanov V, Vlasuyk I, Nezhivleva K, Mozhaeva A. (2022) Method of preventing leakage of personal data through eyetracking modules of user devices. T-Comm, 16 (7) 44-51.<br id="__10"><br id="__11">Vlasyuk IV, Pashkovskaya AR, Myasnikova VS, Nikolskaya DI, Mozhaeva AI (2022). ANALYSIS OF THE COST OF CREATION OF MODERN DATABASES OF VIDEO SEQUENCES WITH SUBJECTIVE QUALITY ASSESSMENT. DSPA: Application Issues of Digital Signal Processing No. 1<br id="__12"><br id="__13">Votyakov SY, Detusheva PV, Mazin VA, Fast SS, Mozhaeva AI. (2023). MTUCI Database with Constant Subjective Assessment: Research and Device for Generating Video Sequences of Constant Quality. DSPA: Application Issues of Digital Signal Processing, vol. 13, no. 3, pp. 12-19.<br id="__14"><br id="__15">Davydova AA, Mozhaeva AI, Khurani VK, Demina MA, Rusalimov MA. (2022). Methodology for studying the identity of perception of user interest regions when viewing streaming video containing various content and compression artifacts. Systems for synchronization, formation and processing of signals, vol. 13, no. 6, pp. 42-51.<br id="__16"><br id="__17">Potashnikov AM, Mozhaeva AI. (2021). Study of the threshold resolution of the human visual system for the primary colours of the RGB system. DSPA: Issues of Application of Digital Signal Processing, vol. 11, no. 1, pp. 3-10.<br id="__18"><br id="__19">Mozhaeva AI, Vlasyuk IV, Potashnikov AM, Streeter L. (2021). A reference objective metric for assessing video quality compatible with PSNR considers frequency and peripheral characteristics of human vision. DSPA: Issues of application of digital signal processing, vol. 11, no. 2, pp. 44-54.<br id="__20"></span></span>
-          
-          <span id="_140_57" class="pointer-events-none"><span id="__0" class="text">Peer-reviewed journal articles</span></span>
-
-          <span id="Paragraph_0" class="pointer-events-none"><span id="__27" class="text">Mozhaeva A, Vlasuyk I, Potashnikov A, Mazin V and Streeter L (2024). Video Quality Metric Compatible with PSNR Considering Recent Knowledge of Peripheral Characteristics of Human Vision, 39th International Conference on Image and Vision Computing New Zealand (IVCNZ), Christchurch, New Zealand, pp. 1-6, <span class="highlighted">doi: 10.1109/IVCNZ64857.2024.10794472</span>.<br id="__28">&nbsp;<br id="__29">Vlasuyk I, Potashnikov A, Mazin V, Mozhaeva A, Egorov D (2024). A Measurement Method and a Mathematical Model of the Human Vision System's Temporal Peripheral Characteristics, Systems of Signals Generating and Processing in the Field of on Board Communications, pp. 1-7. <span class="highlighted">doi:10.1109/IEEECONF60226.2024.10496740.</span><br id="__30">&nbsp;<br id="__31">Mozhaeva A, Mazin V, Cree MJ and Streeter L (2023). NRspttemVQA: Real-Time Video Quality Assessment Based on the User’s Visual Perception, 38th International Conference on Image and Vision Computing New Zealand (IVCNZ), Palmerston North, New Zealand, pp. 1-7. <span class="highlighted">doi: 10.1109/IVCNZ61134.2023.10343863</span>.<br id="__32">&nbsp;<br id="__33">Egorova A, Baryshev R, Mozhaeva A (2023). Methodology of researching perception identity of regions of users' interests while viewing streaming video containing various content and compression artefacts. Systems of Signals Generating and Processing in the Field of on Board Communications, pp. 114-120. <span class="highlighted">https://doi.org/10.1109/IEEECONF56737.2023.10092038.</span><br id="__34"><br id="__35">Mazin V, Cree MJ, Streeter L, Nezhivleva K, Mozhaeva A (2023). Research and application of the adaptive model of the human visual system for improving the effectiveness of objective video quality metrics. 33rd Conference of Open Innovations Association FRUCT, pp.192-197.<br id="__36"><span class="highlighted">doi: 10.23919/FRUCT58615.2023.10142993.</span><br id="__37">&nbsp;<br id="__38">Mozhaeva A, Streeter L, Vlasuyk I, Potashnikov A (2021). Full reference video quality assessment metric on base human visual system consistent with PSNR. 28th Conference of Open Innovations Association FRUCT, pp. 309-315. <span class="highlighted">https://doi.org/10.23919/FRUCT50888.2021.9347604.</span><br id="__39">&nbsp;<br id="__40">Mozhaeva A, Vlasuyk I, Potashnikov A, Cree M, Streeter L (2021). The method and devices for research the parameters of the human visual system to video quality assessment. Systems of Signals Generating and Processing in the Field of on Board Communications, pp. 1-5. <span class="highlighted">https://doi.org/10.1109/IEEECONF51389.2021.9416081.</span><br id="__41"><br id="__42">Potashnikov A, Mozhaeva A, Vlasuyk I, Mazin V , Egorov D, "Research of the Dependence of the Sensitivity of the Visual System on the Geometric Dimensions of the Stimuli in the Perception of a Typical Multimedia Content,"&nbsp;2024 36th Conference of Open Innovations Association (FRUCT), Lappeenranta, Finland, 2024, pp. 617-625, <span class="highlighted">doi: 10.23919/FRUCT64283.2024.10749915.</span><br id="__43"><br id="__44">Drebuzhan AM, Nezhivleva KI, Potashnikov AM, Vlasuyk IV, Mozhaeva AI. (2022). The steganographic method of introducing additional information, resistant to transcoding and conversion. 2022 Systems of Signals Generating and Processing in the Field of on Board Communications, SOSG 2022, <span class="highlighted">https://doi.org/10.1109/IEEECONF53456.2022.9744086</span><br id="__45"><br id="__46">Egorov DA, Fedorov VD, Vlasuyk IV, Potashnikov AM, Mozhaeva AI. (2022). A novel method for estimating the spatial frequency characteristics of cameras based on generative random sequences. 2022 Systems of Signals Generating and Processing in the Field of on Board Communications, SOSG 2022, <span class="highlighted">https://doi.org/10.1109/IEEECONF53456.2022.9744396.</span><br id="__47"><br id="__48">Nezhivleva KI, Davydova AA, Drebuzhan AM, Mozhaeva AI, Balobanov A. (2022). Comparing of modern methods used to assess the quality of video sequences during signal streaming with and without human perception. 2022 Systems of Signal Synchronization, Generating and Processing in Telecommunications, SYNCHROINFO 2022, <span class="highlighted">https://doi.org/10.1109/SYNCHROINFO55067.2022.9840983</span><br id="__49"><br id="__50">Potashnikov AM, Mazin VA, Stepanov NS, Smirnov AP, Mozhaeva AI. (2022). Analysis of Modern Methods Used to Assess the Quality of Video Sequences During Signal Streaming. 2022 Systems of Signals Generating and Processing in the Field of on Board Communications, SOSG 2022, <span class="highlighted">https://doi.org/10.1109/IEEECONF53456.2022.974429.</span><br id="__51"><br id="__52">Mozhaeva A, Potashnikov A, Vlasuyk I, Streeter L. (2021). Constant subjective quality database: the research and device of generating video sequences of constant quality. 2021 International Conference on Engineering Management of Communication and Technology, EMCTECH 2021, <span class="highlighted">https://doi.org/10.1109/EMCTECH53459.2021.9618977.</span><br id="__53"><br id="__54">Potashnikov AM, Mozhaeva AI, Vlasuyk I V, Fedorov VD, Balobanov AV. (2021). The method of forming a panorama with increased resolution in the spatial direction. 2021 Systems of Signals Generating and Processing in the Field of on Board Communications, SOSG 2021, <span class="highlighted">https://doi.org/10.1109/IEEECONF51389.2021.9415978.</span><br id="__55"><br id="__56">Akhromeiko DS, Zhuravlev AD, Safonov IA, Mozhaeva AI, Streeter L. (2022). ANALYSIS OF MODERN ENCODING STANDARDS FOR STREAMING VIDEO TRANSMISSION. DSPA: Application Issues of Digital Signal Processing No. 3<br id="__57"></span></span>
-          
-          <span id="_140_57" class="pointer-events-none"><span id="__0" class="text">Peer reviewed book chapters, books edited</span></span>
-          
-
-          <span id="Paragraph_1" class="pointer-events-none"><span id="__21" class="text">Mozhaeva A, Mazin V, Cree MJ, Streeter L (2022). Video quality assessment considering the features of the human visual system. Lecture Notes in Computer Science Cham: Springer Nature Switzerland, pp. 288–300. <span class="highlighted">https://doi.org/10.1007/978-3-031-25825-1_21</span></span></span>
-           
-          <span id="_140_57" class="pointer-events-none"><span id="__0" class="text">Software</span></span>
-
-          <span id="Paragraph_2" class="pointer-events-none"><span id="__22" class="text">SOFTWARE FOR IMPROVING THE EFFICIENCY OF VIDEO QUALITY ASSESSMENT ALGORITHMS "MODULE ZSCH-M". Certificate of registration 2023660431, 19.05.2023.<br id="__23"><br id="__24">SOFTWARE FOR CREATING VIDEO SEQUENCES OF CONSTANT SUBJECTIVE QUALITY "SVPSC". VERSION 1.0. Certificate of registration 2022610327, 11.01.2022.&nbsp;<br id="__25"><br id="__26">SOFTWARE FOR COLLECTING AND PROCESSING VIEW DIRECTION STATISTICS "SOSNV". VERSION 1.0. Certificate of registration 2023611046, 16.01.2023.</span></span>
-
-        </div>
-        <div id="Buttons_Icon">
-          <div id="Icon" class="pointer-events-none">
-          </div>
-        </div>
-        <div id="Navigation">
-          <span id="_140_100"><span id="__67"><a data-node-id="335:219" href="index.html" id="__68" class="text">Anastasia Mozhaeva</a></span></span>
-          <div id="Items">
-            <span id="_140_102"><span id="__71"><a data-node-id="74:28" href="teaching.html" id="__72" class="text">Teaching</a></span></span>
-            <span id="_140_103"><span id="__73"><a data-node-id="140:44" href="publications.html" id="__74" class="text">Publications</a></span></span>
-            <span id="_140_104"><span id="__75"><a data-node-id="336:444" href="works.html" id="__76" class="text">Projects</a></span></span>
-          </div>
-        </div>
+</head>
+  <body id="_">
+  <div id="Landing_page">
+    <div id="Image">
+      <div id="Copy" class="pointer-events-none">
       </div>
-    </body></html>
+      
+      <!-- Journal Articles Section -->
+      <span id="_140_57" class="section-header pointer-events-none">
+        <span id="__0" class="text">Peer-reviewed journal articles</span>
+      </span>
+      <span id="Paragraph" class="pointer-events-none">
+        <span id="__1" class="text">Mozhaeva A, Cree MJ, Durrant RJ, Vlasuyk I, Potashnikov A, Mazin V, Streeter L (2024). A contrast sensitivity model of the human visual system in modern conditions for presenting video content. PLoS One, 19(5).<span class="highlighted"> https://doi.org/10.1371/journal.pone.0303987</span><br id="__2"><br id="__3">
+        <!-- Rest of journal articles content -->
+        </span>
+      </span>
+      
+      <!-- Conference Papers Section -->
+      <span id="_140_58" class="section-header pointer-events-none">
+        <span id="__0" class="text">Conference papers</span>
+      </span>
+      <span id="Paragraph_0" class="pointer-events-none">
+        <span id="__27" class="text">Mozhaeva A, Vlasuyk I, Potashnikov A, Mazin V and Streeter L (2024). Video Quality Metric Compatible with PSNR Considering Recent Knowledge of Peripheral Characteristics of Human Vision, 39th International Conference on Image and Vision Computing New Zealand (IVCNZ), Christchurch, New Zealand, pp. 1-6, <span class="highlighted">doi: 10.1109/IVCNZ64857.2024.10794472</span>.<br id="__28">
+        <!-- Rest of conference papers content -->
+        </span>
+      </span>
+      
+      <!-- Book Chapters Section -->
+      <span id="_140_59" class="section-header pointer-events-none">
+        <span id="__0" class="text">Peer reviewed book chapters, books edited</span>
+      </span>
+      <span id="Paragraph_1" class="pointer-events-none">
+        <span id="__21" class="text">Mozhaeva A, Mazin V, Cree MJ, Streeter L (2022). Video quality assessment considering the features of the human visual system. Lecture Notes in Computer Science Cham: Springer Nature Switzerland, pp. 288–300. <span class="highlighted">https://doi.org/10.1007/978-3-031-25825-1_21</span></span>
+      </span>
+      
+      <!-- Software Section -->
+      <span id="_140_60" class="section-header pointer-events-none">
+        <span id="__0" class="text">Software</span>
+      </span>
+      <span id="Paragraph_2" class="pointer-events-none">
+        <span id="__22" class="text">SOFTWARE FOR IMPROVING THE EFFICIENCY OF VIDEO QUALITY ASSESSMENT ALGORITHMS "MODULE ZSCH-M". Certificate of registration 2023660431, 19.05.2023.<br id="__23"><br id="__24">SOFTWARE FOR CREATING VIDEO SEQUENCES OF CONSTANT SUBJECTIVE QUALITY "SVPSC". VERSION 1.0. Certificate of registration 2022610327, 11.01.2022.&nbsp;<br id="__25"><br id="__26">SOFTWARE FOR COLLECTING AND PROCESSING VIEW DIRECTION STATISTICS "SOSNV". VERSION 1.0. Certificate of registration 2023611046, 16.01.2023.</span>
+      </span>
+    </div>
+    
+    <div id="Buttons_Icon">
+      <div id="Icon" class="pointer-events-none">
+      </div>
+    </div>
+    
+    <div id="Navigation">
+      <span id="_140_100"><span id="__67"><a data-node-id="335:219" href="index.html" id="__68" class="text">Anastasia Mozhaeva</a></span></span>
+      <div id="Items">
+        <span id="_140_102"><span id="__71"><a data-node-id="74:28" href="teaching.html" id="__72" class="text">Teaching</a></span></span>
+        <span id="_140_103"><span id="__73"><a data-node-id="140:44" href="publications.html" id="__74" class="text">Publications</a></span></span>
+        <span id="_140_104"><span id="__75"><a data-node-id="336:444" href="works.html" id="__76" class="text">Projects</a></span></span>
+      </div>
+    </div>
+  </div>
+</body>
