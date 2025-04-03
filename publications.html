@@ -66,8 +66,10 @@
 
 
 
-/* Section headers (previously _140_57) */
-.section-header, [id^="_140_5"] {
+/* Target section headers specifically */
+#_140_57, 
+[id^="_140_5"],
+span[id^="_140_"] {
     text-align: left;
     color: #eb4706;
     font-family: Inter, sans-serif;
@@ -82,8 +84,11 @@
     margin: 30px;
 }
 
+/* Responsive styles with higher specificity */
 @media (max-width: 768px) {
-    .section-header, [id^="_140_5"] {
+    #_140_57, 
+    [id^="_140_5"],
+    span[id^="_140_"] {
         font-size: 4vw !important;
         text-align: center;
         margin-left: auto;
@@ -92,17 +97,26 @@
 }
 
 @media (max-width: 480px) {
-    .section-header, [id^="_140_5"] {
-        font-size: 0.3vw !important;
+    #_140_57, 
+    [id^="_140_5"],
+    span[id^="_140_"] {
+        font-size: 0.8rem !important; /* Fixed size for better readability */
         text-align: center;
         width: 90%;
         max-width: 250px;
-        margin: 0 auto;
+        margin: 15px auto;
         padding: 5px;
         line-height: 1.2;
     }
+    
+    /* Target the text inside the headers */
+    #_140_57 .text, 
+    [id^="_140_5"] .text,
+    span[id^="_140_"] .text,
+    #__0 {
+        font-size: 0.8rem !important;
+    }
 }
-
 
 
 
