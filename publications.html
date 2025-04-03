@@ -55,7 +55,7 @@
 
 #Landing_page, #Landing_page * {
   font-family: 'Inter', sans-serif !important;
-  font-size: 16px !important; /* Можете скорректировать размер шрифта */
+  font-size: 16px !important; 
 }
   
   #Image{--f2w-order:2;background-color:#fff;border-radius:12px;
@@ -82,29 +82,38 @@
 }
 
 #_140_57 {
-    font-family: Inter, sans-serif !important; /* Принудительное изменение шрифта */
+    text-align: left;
+    color: #eb4706;
+    font-family: Inter, sans-serif;
+    font-size: 2vw !important; 
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 30px;
 }
-  
 
-#_140_57 {
-    background-color: yellow !important; /* Принудительный желтый фон */
-    font-size: 0.4rem !important; /* Принудительное уменьшение шрифта */
-    text-align: center !important;
-    margin: 0 auto !important;
-    padding: 5px !important;
-    line-height: 1.2 !important;
-    width: 90% !important;
-    max-width: 100% !important; 
-    color: red !important; /* Цвет текста для теста */
-    border: 5px solid black !important; /* Чёрная рамка для проверки */
-}
-  
 @media (max-width: 768px) { 
     #_140_57 {
-        font-size: 4vw; 
-        text-align: center; 
+        font-size: 4vw !important; 
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) { 
+    #_140_57 {
+        font-size: 0.6rem !important; 
+        text-align: center !important;
+        width: 90% !important;
+        max-width: 250px !important; 
+        margin: 0 auto !important;
+        padding: 5px !important;
+        line-height: 1.2 !important; 
     }
 }
 
@@ -137,7 +146,7 @@
 
 
   #Paragraph{text-align:justify;color:#373333;--f2w-order:2;-webkit-background-clip:text;background-clip:text;
-  width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:150%;display:block;position:relative;
+  width:100%;max-width: 86.2%;height:auto;font-family:Inter;font-size:1.2rem !important;font-weight:300;line-height:150%;display:block;position:relative;
   margin-top:30px;margin-left:7.9%;margin-right:5.9%}
   #__1{color:#373333;-webkit-background-clip:text;background-clip:text;font-family:Inter;font-size:1.2rem;font-weight:300;line-height:1.5}
     .highlighted {
@@ -147,21 +156,21 @@
 
   @media (max-width: 1024px) {
     #Paragraph {
-        font-size: 1.1rem; /* Adjust font size for tablets */
-        margin-top: 30px; /* Slightly smaller margin on tablets */
+        font-size: 1.1rem; 
+        margin-top: 30px; 
     }
 }
 
 @media (max-width: 768px) {
     #Paragraph {
-        font-size: 1rem; /* Further reduce font size on mobile */
-        margin-top: 20px; /* Reduce margin-top on mobile */
+        font-size: 1rem !important; 
+        margin-top: 20px; 
     }
 }
 
 @media (max-width: 480px) {
     #Paragraph {
-        font-size: 0.4rem; 
+        font-size: 0.4rem !important; 
         margin-top: 10px; 
         margin-left: auto; 
         margin-right: auto;
