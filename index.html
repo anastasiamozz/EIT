@@ -192,10 +192,23 @@
 /* Small screens (mobile phones) */
 @media screen and (max-width: 480px) {
   #Copy_0 {
-    left: 5%;
-    width: 150px;
-    top: 5%;
-    font-size: 8px; /* Added font size of 8px */
+    left: 20px;
+    width: calc(100% - 40px);
+    top: 90px;
+    height: auto;
+    position: relative;
+    margin-top: 0;
+    font-size: 8px;
+  }
+  
+  /* Adjust font sizes for personal info text */
+  #Copy_0 #_303_26,
+  #Copy_0 #__5, 
+  #Copy_0 #__10, 
+  #Copy_0 #__13, 
+  #Copy_0 #__16 {
+    font-size: 8px;
+    line-height: 130%;
   }
 
 
@@ -237,7 +250,7 @@
 /* Small screens (mobile phones) */
 @media screen and (max-width: 480px) {
   #Page_title {
-    grid-row-gap: 12px; /* Compact spacing for mobile */
+    grid-row-gap: 8px; /* Compact spacing for mobile */
     width: 100%; /* Ensure full width */
   }
   
@@ -252,17 +265,7 @@
   }
 }
 
-/* Extra small screens */
-@media screen and (max-width: 320px) {
-  #Page_title {
-    grid-row-gap: 8px; /* Minimal spacing for very small screens */
-  }
-  
-  /* Even smaller font for tiny screens */
-  #_303_26 {
-    font-size: 12px;
-  }
-}
+
 
 
 
@@ -335,13 +338,7 @@
   }
 }
 
-/* Extra small screens */
-@media screen and (max-width: 320px) {
-  #_303_26, #__5, #__10, #__13, #__16 {
-    font-size: 12px;
-    line-height: 135%;
-  }
-}
+
 
 /* Paragraph styles */
 #Paragraph {
@@ -414,15 +411,18 @@
 
 @media screen and (max-width: 480px) {
   #Paragraph {
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-    font-size: 16px;
-    top: 330px;
+    width: calc(100% - 40px);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 20px;
   }
   
   #__20 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
